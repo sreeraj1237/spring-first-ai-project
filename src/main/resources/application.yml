@@ -1,0 +1,12 @@
+server:
+  servlet:
+    context-path: /first-ai-project/v1/
+  port: 9292
+spring:
+  ai:
+    ollama:
+      base-url: http://localhost:11434
+      init:
+        pull-model-strategy: when_missing
+      chat:
+        model: ollama3.1
